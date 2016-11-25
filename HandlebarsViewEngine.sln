@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Handlebars", "src\Handlebars\Handlebars.csproj", "{7E1BEA67-B938-4945-A525-5AAB72ABDA26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandlebarsViewEngine", "src\Handlebars\HandlebarsViewEngine.csproj", "{7E1BEA67-B938-4945-A525-5AAB72ABDA26}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "src\Website\Website.csproj", "{C0CAC23D-0000-48A8-9E9F-901ED0582401}"
 EndProject

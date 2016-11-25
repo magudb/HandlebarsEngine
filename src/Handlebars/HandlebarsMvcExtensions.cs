@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
-namespace Handlebars
+namespace HandlebarsViewEngine
 {
-    public static class MvcViewFeaturesMvcBuilderExtensions
+    public static class HandlebarsMvcExtensions
     {
         public static IMvcBuilder AddHandlbars(this IMvcBuilder builder, Action<HandlebarsViewEngineOptions> setupAction = null)
         {
@@ -26,11 +26,7 @@ namespace Handlebars
             var tempDirectoryProvider = new HandlebarsTempDirectoryProvider();
             builder.Services.AddSingleton<IHandlebarsTempDirectoryProvider>(tempDirectoryProvider);
             builder.Services.AddSingleton<IHandlebarsRendering, HandlebarsRendering>();
-            builder.Services.AddSingleton<IHandlebarsViewEngine, HandlebarsViewEngine>();
-            builder.Services.AddNodeServices((options) =>
-            {
-                //options.ProjectPath = tempDirectoryProvider.TempDirectory;
-            });
+            builder.Services.AddSingleton<IHandlebarsViewEngine, HandlebarsViewEngine>();         
             return builder;
 
         }

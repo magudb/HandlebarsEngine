@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Handlebars
+namespace HandlebarsViewEngine
 {
     public interface IHandlebarsTempDirectoryProvider
     {

@@ -2,16 +2,16 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 
-namespace Handlebars
+namespace HandlebarsViewEngine
 {
     [HtmlTargetElement("handelbars")]
     public class HandlebarsTagHelper : TagHelper
     {
-        public IHandlebarsRendering _handelbarsRendering { get; set; }
+        public IHandlebarsRendering HandelbarsRendering { get; set; }
 
-        public HandlebarsTagHelper(IHandlebarsRendering pugRendering)
+        public HandlebarsTagHelper(IHandlebarsRendering handlebarsRendering)
         {
-            _handelbarsRendering = pugRendering;
+            HandelbarsRendering = handlebarsRendering;
         }
 
         [HtmlAttributeName("model")]
@@ -22,7 +22,7 @@ namespace Handlebars
 
         public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
         {
-            var result = await _handelbarsRendering.Render(new FileInfo(View), Model, null, null);
+            var result = await HandelbarsRendering.Render(new FileInfo(View), Model, null, null);
             output.TagName = null;
             output.Content.AppendHtml(result);
         }

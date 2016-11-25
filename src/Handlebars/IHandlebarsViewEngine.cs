@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.ViewEngines;
 
-namespace Handlebars
+namespace HandlebarsViewEngine
 {
     public interface IHandlebarsViewEngine : IViewEngine
     {

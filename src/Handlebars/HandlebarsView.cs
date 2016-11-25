@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
 
-namespace Handlebars
+namespace HandlebarsViewEngine
 {
     public class HandlebarsView : IView
     {

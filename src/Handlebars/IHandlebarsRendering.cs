@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
-namespace Handlebars
+namespace HandlebarsViewEngine
 {
     public interface IHandlebarsRendering
     {

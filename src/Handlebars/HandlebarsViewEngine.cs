@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
 using Microsoft.Extensions.Options;
 
-namespace Handlebars
+namespace HandlebarsViewEngine
 {
     public class HandlebarsViewEngine : IHandlebarsViewEngine
     {

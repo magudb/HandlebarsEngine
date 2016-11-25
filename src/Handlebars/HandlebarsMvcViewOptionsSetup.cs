@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
-namespace Handlebars
+namespace HandlebarsViewEngine
 {
     public class HandlebarsMvcViewOptionsSetup : IConfigureOptions<MvcViewOptions>
     {
